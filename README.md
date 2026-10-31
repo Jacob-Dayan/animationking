@@ -1,9 +1,9 @@
 # Animation King (`animationking`)
 
-[![CI Status](https://img.shields.io/badge/CI-passing-00e676?style=flat-square&logo=githubactions&logoColor=white)](.github/workflows/ci.yml)
-[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-3776ab?style=flat-square&logo=python&logoColor=white)](pyproject.toml)
-[![Managed by uv](https://img.shields.io/badge/uv-managed-de5fe9?style=flat-square&logo=astral&logoColor=white)](https://docs.astral.sh/uv/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
+[![CI](https://github.com/Jacob-Dayan/animationking/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Jacob-Dayan/animationking/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org)
+[![uv](https://img.shields.io/badge/managed%20by-uv-purple.svg)](https://docs.astral.sh/uv/)
 
 A fast, zero-dependency 24-bit TrueColor procedural terminal animation suite and ASCII/ANSI demoscene engine.
 
