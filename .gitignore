@@ -1,0 +1,29 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Tooling & test caches
+.ruff_cache/
+.pytest_cache/
+.pyright/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Packaging & distribution artifacts
+dist/
+build/
+*.egg-info/
+*.egg
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~

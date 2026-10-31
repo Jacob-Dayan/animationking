@@ -1,0 +1,79 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "animationking"
+version = "1.0.0"
+description = "Enterprise-grade, zero-dependency 24-bit TrueColor ANSI terminal rendering engine and 14-scene procedural animation suite."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Animation King Engineering" },
+]
+keywords = [
+    "terminal",
+    "ansi",
+    "truecolor",
+    "animation",
+    "demoscene",
+    "ascii-art",
+    "tui",
+    "graphics",
+    "cli",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Artistic Software",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Terminals",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.scripts]
+animationking = "animationking.cli:main"
+aking = "animationking.cli:main"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.0",
+    "pyright>=1.1.390",
+    "pytest>=8.3.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/animationking"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF", "PLC"]
+
+[tool.pyright]
+pythonVersion = "3.11"
+typeCheckingMode = "standard"
+include = ["src", "tests"]
+reportMissingTypeStubs = false
+reportUnnecessaryTypeIgnoreComment = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
