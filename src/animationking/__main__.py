@@ -9,10 +9,8 @@ uv run animationking "$@"
 ```
 """
 
-
 import subprocess
 import sys
 
 result = subprocess.run(["uv", "run", "animationking", *sys.argv[1:]])
 sys.exit(result.returncode)
-
